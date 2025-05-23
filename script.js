@@ -19,15 +19,14 @@ function nextImage() {
 }
 updateCarousel();
 
-["individual", "parejas", "extras"].forEach(id => {
+["individual", "extras"].forEach(id => {
   document.getElementById(id).addEventListener("change", calculateTotal);
 });
 
 function calculateTotal() {
   const individual = parseInt(document.getElementById("individual").value) || 0;
-  const parejas = parseInt(document.getElementById("parejas").value) || 0;
   const extras = parseInt(document.getElementById("extras").value) || 0;
-  const total = individual + parejas + extras;
+  const total = individual + extras;
   document.getElementById("total").textContent = `Total: ${total}€`;
 }
 
