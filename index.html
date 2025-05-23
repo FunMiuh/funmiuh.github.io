@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FunMiuh Funko Personalizado</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='black'/><path d='M12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35z' fill='white'/></svg>">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>¡Bienvenidos a FunMiuh!</h1>
+    <h2>Crea, personaliza y diviértete con Fun Miuh</h2>
+    <div class="iconos">
+      <a href="https://www.instagram.com/miuhpro/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://cults3d.com/es/usuarios/MiuhPro/modelos-3d" target="_blank"><i class="fas fa-store"></i></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="carousel" onclick="nextImage()">
+      <img src="img/novia.png" class="carousel-img" alt="Funko 1">
+      <img src="img/novio.png" class="carousel-img" alt="Funko 2">
+      <img src="img/edupotter.png" class="carousel-img" alt="Funko 3">
+      <img src="img/adif.png" class="carousel-img" alt="Funko 4">
+      <img src="img/catwoman.png" class="carousel-img" alt="Funko 5">
+      <img src="img/sally.png" class="carousel-img" alt="Funko 6">
+      <img src="img/arbitro.png" class="carousel-img" alt="Funko 8">
+      <img src="img/gonzalo.png" class="carousel-img" alt="Funko 9">
+    </div>
+    <div class="pricing">
+      <h3>Precios</h3>
+      <select id="individual">
+        <option disabled selected>Figura Individual</option>
+        <option value="60">Pose Básica - 60€</option>
+        <option value="75">Pose Avanzada - 75€</option>
+      </select>
+      <select id="parejas">
+        <option disabled selected>Figura Parejas</option>
+        <option value="110">Pose Básica - 110€</option>
+        <option value="125">Pose Avanzada - 125€</option>
+      </select>
+      <select id="extras">
+        <option disabled selected>Extras</option>
+        <option value="5">1 Objeto - 5€</option>
+        <option value="10">2 Objetos - 10€</option>
+        <option value="15">3 Objetos - 15€</option>
+        <option value="20">4 Objetos - 20€</option>
+      </select>
+      <div id="total" class="total">Total: 0€</div>
+    </div>
+  </div>
+  <div class="contact">
+    <a class="chat-bubble" href="https://t.me/miuhpro" target="_blank">¡Contacta con nosotros!</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
